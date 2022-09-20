@@ -8,6 +8,8 @@ btnVisualizar.addEventListener("click", () => {
   //   console.log(inputColor.value);
   //   console.log(cardColor.style.backgroundColor);
 
+  console.log(cardColor.style.backgroundColor);
+  
   parrafoExa.textContent = inputColor.value;
   cardColor.style.backgroundColor = inputColor.value;
 
