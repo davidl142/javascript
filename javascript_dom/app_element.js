@@ -1,5 +1,8 @@
 const h1 = document.getElementById("tituloWeb");
-//  el h1 es un elemento.
+//  el h1 es un elemento. es igual getElementById o querySelector
+// const h1 = document.querySelector("#tituloWeb");
+
+// https://developer.mozilla.org/es/docs/Web/API/Element
 
 console.log(h1.className);
 console.log(h1.id);
