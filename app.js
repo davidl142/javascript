@@ -1,12 +1,24 @@
-const h1 = document.getElementById("tituloWeb");
-//  el h1 es un elemento.
+const inputColor = document.querySelector("#inputColor");
+const btnVisualizar = document.querySelector("#btnVisualizar");
+const parrafoExa = document.querySelector("#parrafoExa");
+const cardColor = document.querySelector("#cardColor");
 
-console.log(h1.className);
-console.log(h1.id);
-console.log(h1.style);
-console.log(h1.tagName);
-console.log(h1.textContent);
+// console.log(inputColor);
+// console.log(btnVisualizar);
+// console.log(parrafoExa);
+// console.log(cardColor);
+console.log(inputColor.value);
+console.log(cardColor);
 
-h1.textContent = "nuevo texto desde js";
-h1.style.backgroundColor = "red";
-h1.style.color = "white";
+btnVisualizar.addEventListener("click", () => {
+  console.log("me diste click");
+  console.log(inputColor.value);
+  parrafoExa.textContent = inputColor.value;
+  cardColor.style.background = inputColor.value;
+
+  // cardColor.style.backgroundColor = inputColor.value;
+  navigator.clipboard
+    .writeText(inputColor.value)
+    .then(() => console.log("texto copiado"))
+    .catch((e) => console.log(e));
+});
