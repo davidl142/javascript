@@ -2,7 +2,7 @@
 
 ## Todo con fines educativos
 
-#si puede mejorar el codigo, bienvenido!
+si puede mejorar el codigo, bienvenido!
 
 ## template
 
