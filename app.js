@@ -9,4 +9,5 @@ console.log(h1.textContent);
 
 h1.textContent = "nuevo texto desde js";
 h1.style.backgroundColor = "red";
+
 h1.style.color = "white";
